@@ -77,6 +77,7 @@ class GameController extends Controller
 
         return view('games.show')
             ->with('game', $game)
+            ->with('currentPlayerId', $tictactoe->getCurrentPlayerId())
             ->with('currentPlayer', $tictactoe->getCurrentPlayerName())
             ->with('board', $tictactoe->getBoard())
             ->with('winner', $checkIfRowCompleted);

@@ -124,6 +124,7 @@
 
                 </div>
                 <div class="panel-footer">
+                    <img src="{{ asset('player' . $currentPlayerId . '.png') }}" width="10px" />
                     {{ $currentPlayer }} is nu aan de beurt
                 </div>
             </div>
